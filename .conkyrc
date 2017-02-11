@@ -1,0 +1,7 @@
+out_to_x no
+out_to_console yes
+update_interval 1.0
+total_run_times 0
+use_spacer none
+TEXT
+${acpitemp}C | ${battery} | RAM:$memperc% | CPU:${cpu}% | Vol: ${exec pactl list sinks | grep "Volume: f" | cut -d " " -f6 } | ${exec pactl list sinks | grep "Mute: "} | ${downspeedf wlp1s0} | ${fs_free}
