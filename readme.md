@@ -23,3 +23,18 @@ This allows even go development with `ln -s /mnt/dev/whatever $GOPATH/whatever`
 # Time
 ntpd -qg
 hwclock --systohc
+
+# Bluetooth audio
+```
+bluetoothctl
+power on
+connect <device>
+```
+Might also have to enable the service
+
+If sound is bad
+```
+pacmd set-card-profile 2 a2dp_sink
+```
+
+

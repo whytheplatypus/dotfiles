@@ -4,4 +4,4 @@ update_interval 1.0
 total_run_times 0
 use_spacer none
 TEXT
-${acpitemp}C | ${battery} | RAM:$memperc% | CPU:${cpu}% | Vol: ${exec pactl list sinks | grep "Volume: f" | cut -d " " -f6 } | ${exec pactl list sinks | grep "Mute: "} | ${downspeedf wlp1s0} | ${fs_free}
+${exec xbacklight | grep -oP '.*?(?=\.)'} | ${acpitemp}C | ${battery} | RAM:$memperc% | CPU:${cpu}% | Vol: ${exec pactl list sinks | grep "Volume: f" | cut -d " " -f6 } | ${exec pactl list sinks | grep "Mute: "} | ${wireless_essid wlp1s0} ${downspeedf wlp1s0} | ${fs_free}
