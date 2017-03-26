@@ -1,7 +1,7 @@
 # Arch
 Update: `sudo pacman -Syu`
 Toggle trackpad: `alt + space`
-Save package list: `pacman -Qqu > pacman .txt`
+Save package list: `pacman -Qet > pacman .txt`
 
 # Network
 `nmtui-connect`
