@@ -6,10 +6,45 @@
 - 
   category: default
   local: false
+  name: "airblade/vim-gitgutter"
+  opt: false
+- 
+  category: default
+  local: false
   name: "fatih/vim-go"
   opt: false
 - 
   category: default
   local: false
+  name: kien/ctrlp.vim
+  opt: false
+- 
+  category: default
+  local: false
+  name: maralla/completor.vim
+  opt: false
+- 
+  category: default
+  local: false
+  name: mileszs/ack.vim
+  opt: false
+- 
+  category: default
+  local: false
+  name: "saltstack/salt-vim"
+  opt: false
+- 
+  category: default
+  local: false
+  name: scrooloose/nerdcommenter
+  opt: false
+- 
+  category: default
+  local: false
   name: scrooloose/nerdtree
+  opt: false
+- 
+  category: default
+  local: false
+  name: "tpope/vim-surround"
   opt: false
