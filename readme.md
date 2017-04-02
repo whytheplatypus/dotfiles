@@ -38,3 +38,10 @@ pacmd set-card-profile 2 a2dp_sink
 ```
 
 
+# NFS
+
+Show possibilities
+```
+showmount -e <server>
+sudo mount <server>:<server path> <local path>
+```

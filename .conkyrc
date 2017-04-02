@@ -4,4 +4,4 @@ update_interval 1.0
 total_run_times 0
 use_spacer none
 TEXT
-${exec xbacklight | grep -oP '.*?(?=\.)'} | ${acpitemp}C | ${battery} | RAM:$memperc% | CPU:${cpu}% | Vol: ${exec amixer get Master | grep "Front Left:" | awk '{print $5 $6}'} | ${wireless_essid wlp1s0} ${downspeedf wlp1s0} | ${fs_free}
+${exec xbacklight | grep -oP '.*?(?=\.)'} | ${acpitemp}C | ${battery} | RAM:$memperc% | CPU:${cpu}% | Vol: ${exec amixer get Master | grep "Front Left:" | awk '{print $5 $6}'} | ${wireless_essid wlp1s0} ${downspeedf wlp1s0} | ${fs_free} | ${exec curl -s https://ipinfo.io/ip}
