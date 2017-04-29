@@ -10,6 +10,12 @@ or
 
 `nmcli dev wifi connect <name> password <password>`
 
+## VPN
+```
+pia -l # lists config optios
+openvpn --config /etc/openvpn/client/<config_option.conf>
+```
+
 # urxvt
 - switch font: `ctrl + <9,0,-,=>`
 
