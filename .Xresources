@@ -12,7 +12,7 @@ URxvt.tripleclickwords:     true
 URxvt.cursorUnderline:      true
 URxvt.cursorBlink:          true
 !URxvt.font: 		    xft:DejaVu Sans Mono for Powerline-12:minspace=True
-URxvt.font: 		    xft:Unifont-20:style=Medium:minspace=True
+URxvt.font: 		    xft:Unifont:style=Medium:minspace=True
 urxvt*transparent: true
 urxvt*shading: 10
 
