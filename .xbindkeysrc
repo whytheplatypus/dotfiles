@@ -77,10 +77,10 @@
 "amixer sset Master toggle"
   XF86AudioMute
 
-"lux -a 50"
+"lux -a 10"
   XF86MonBrightnessUp
 
-"lux -s 50"
+"lux -s 10"
   XF86MonBrightnessDown
 ##################################
 # End of xbindkeys configuration #
