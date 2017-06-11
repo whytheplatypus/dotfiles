@@ -31,6 +31,16 @@
 - 
   category: default
   local: false
+  name: "python-mode/python-mode"
+  opt: false
+- 
+  category: default
+  local: false
+  name: "rust-lang/rust.vim"
+  opt: false
+- 
+  category: default
+  local: false
   name: "saltstack/salt-vim"
   opt: false
 - 

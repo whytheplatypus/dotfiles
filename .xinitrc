@@ -54,7 +54,7 @@ fi
 # xterm -geometry 80x20+494-0 &
 # exec xterm -geometry 80x66+0+0 -name login
 xbindkeys
+~/.fehbg &
 exec spectrwm
 exec syndaemon -i 0.5 -t -K -R -d
-fehbg
 exec dunst &
