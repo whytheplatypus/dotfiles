@@ -14,6 +14,8 @@ or
 ```
 pia -l # lists config optios
 openvpn --config /etc/openvpn/client/<config_option.conf>
+OR
+nmtui-connect
 ```
 
 # urxvt
@@ -51,3 +53,8 @@ Show possibilities
 showmount -e <server>
 sudo mount <server>:<server path> <local path>
 ```
+
+# Screens xrandr
+`xrandr --output DP1 --auto --above eDP1`
+xrandr set the output <output name> automatically above <other output name>
+
