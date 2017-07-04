@@ -2,6 +2,8 @@ export PATH=$HOME/.golang/bin:$PATH
 export GOPATH=$HOME/.golang
 export PATH=$HOME/.gem/ruby/2.4.0/bin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
+
+export XDG_CONFIG_HOME=~/.config
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 

@@ -11,14 +11,20 @@ URxvt.urgentOnBell:         true
 URxvt.tripleclickwords:     true
 URxvt.cursorUnderline:      true
 URxvt.cursorBlink:          true
+URxvt.internalBorder:       40
 !URxvt.font: 		    xft:DejaVu Sans Mono for Powerline-12:minspace=True
 URxvt.font: 		    xft:Unifont-20:style=Medium:minspace=True
-urxvt*transparent: true
-urxvt*shading: 10
+!urxvt*transparent: true
+!urxvt*shading: 10
 
 ! Bind C-0, C-+ and C-= to activate small, medium, and big font size resp.
 URxvt.keysym.C-0:           command:\033]710;xft:Unifont-14:style=Medium:minspace=True\007
 URxvt.keysym.C-minus:       command:\033]710;xft:Unifont-16:style=Medium:minspace=True\007
 URxvt.keysym.C-equal:       command:\033]710;xft:Unifont-20:style=Medium:minspace=True\007
-URxvt.keysym.C-9:           command:\033]710;xft:Unifont:style=Medium:minspace=True\007
+URxvt.keysym.C-9:           command:\033]710;xft:Unifont-12:style=Medium:minspace=True\007
 
+URxvt.keysym.C-3:           command:\033]710;-*-terminus-medium-*-*-*-24-*-*-*-*-*-*-*\007
+URxvt.keysym.C-4:           command:\033]710;-*-terminus-medium-*-*-*-32-*-*-*-*-*-*-*\007
+URxvt.keysym.C-5:           command:\033]710;-*-terminus-medium-*-*-*-40-*-*-*-*-*-*-*\007
+URxvt.keysym.C-2:           command:\033]710;-*-terminus-medium-*-*-*-12-*-*-*-*-*-*-*\007
+URxvt.keysym.C-1:           command:\033]710;-*-terminus-medium-*-*-*-14-*-*-*-*-*-*-*\007

@@ -55,6 +55,11 @@ fi
 # exec xterm -geometry 80x66+0+0 -name login
 xbindkeys
 ~/.fehbg &
-exec spectrwm
+# exec spectrwm
+# sxhkd is currently spun up by bspwmrc
+# sxhkd &
+exec bspwm
+
 exec syndaemon -i 0.5 -t -K -R -d
 exec dunst &
+razer-service

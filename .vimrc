@@ -7,3 +7,5 @@ filetype plugin on
 :set mouse=a
 
 :set laststatus=2
+set undofile
+

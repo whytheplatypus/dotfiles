@@ -44,6 +44,9 @@
 
 "touchpad.sh"
   alt + space
+
+"screen.sh"
+  Mod4 + d
 ## set directly keycode (here control + f with my keyboard)
 #"xterm"
 #  c:41 + m:0x4

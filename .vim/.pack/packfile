@@ -11,7 +11,22 @@
 - 
   category: default
   local: false
+  name: chrisbra/Colorizer
+  opt: false
+- 
+  category: default
+  local: false
+  name: dylanaraps/wal
+  opt: false
+- 
+  category: default
+  local: false
   name: "fatih/vim-go"
+  opt: false
+- 
+  category: default
+  local: false
+  name: "fatih/vim-hclfmt"
   opt: false
 - 
   category: default
@@ -57,6 +72,16 @@
   category: default
   local: false
   name: "tpope/vim-surround"
+  opt: false
+- 
+  category: default
+  local: false
+  name: "vim-airline/vim-airline"
+  opt: false
+- 
+  category: default
+  local: false
+  name: "vim-airline/vim-airline-themes"
   opt: false
 - 
   category: default
