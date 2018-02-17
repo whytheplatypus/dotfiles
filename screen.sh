@@ -1,5 +1,5 @@
 #!/bin/bash
-urxvt -e htop &
-urxvt -e cava &
+urxvtc -e htop &
+urxvtc -e cava &
 spotify &
 
