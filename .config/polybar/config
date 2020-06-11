@@ -1,0 +1,155 @@
+[colors]
+include-file=~/.cache/wal/colors.ini
+
+[global/wm]
+; Adjust the _NET_WM_STRUT_PARTIAL top value
+;   Used for top aligned bars
+margin-bottom = 0
+
+[bar/top]
+width = 100%:-50
+height = 35 
+offset-x = 25
+offset-y = 25 
+;bottom = true
+
+background = ${colors.background}
+foreground = ${colors.color13}
+
+underline-size = 2
+underline-color = ${colors.foreground}
+
+spacing = 1
+padding-left = 0
+padding-right = 0
+module-margin-left = 5 
+module-margin-right = 5
+
+font-0 = Noto Sans:pixelsize=13;0
+font-1 = Wuncon Siji:pixelsize=10;0
+font-2 = FontAwesome5Brands:size=10;2
+font-3 = FontAwesome5Free:size=10;2
+font-4 = FontAwesome5Free:style=Solid:size=10;2
+
+modules-left = xwindow
+modules-center = bspwm 
+modules-right = wireless-network date powermenu
+
+wm-restack = bspwm
+
+scroll-up = bspwm-desknext
+scroll-down = bspwm-deskprev
+
+; MODULES
+
+[module/bspwm]
+type = internal/bspwm
+
+ws-icon-0 = code;
+ws-icon-1 = music;
+ws-icon-2 = web;
+ws-icon-3 = chat;
+ws-icon-default = 
+
+format = <label-state> <label-mode>
+
+label-focused = %icon%
+label-focused-background = ${colors.background}
+label-focused-underline= ${colors.color12}
+label-focused-padding = 4
+
+label-occupied = %icon%
+label-occupied-foreground = ${colors.color13}
+label-occupied-padding = 4
+
+label-urgent = %icon%
+label-urgent-padding = 4
+
+label-empty = %icon%
+label-empty-foreground = #44ffffff
+label-empty-padding = 4
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:80:...%
+label-padding = 4
+
+[module/date]
+type = internal/date
+
+; Seconds to sleep between updates
+interval = 1.0
+
+; See "man date" for details on how to format the date string
+; NOTE: if you want to use syntax tags here you need to use %%{...}
+date = %a %b %d, 
+
+; Optional time format
+time = %H:%M
+
+; if `date-alt` or `time-alt` is defined, clicking
+; the module will toggle between formats
+date-alt = %A, %d %B %Y
+time-alt = %H:%M:%S
+
+label = %date% %time%
+format =    <label>
+format-background = ${colors.background}
+format-padding = 3
+
+[module/cpu]
+type = internal/cpu
+
+; Seconds to sleep between updates
+; Default: 1
+interval = 0.5
+label = CPU %percentage%%
+
+
+[module/wireless-network]
+type = internal/network
+interface = wlp4s0
+label-connected = %essid% %downspeed:9%
+label-disconnected = not connected
+
+[module/memory]
+type = internal/memory
+
+; Seconds to sleep between updates
+; Default: 1
+interval = 3
+label = RAM %gb_used%/%gb_free%
+
+[module/padding]
+type = custom/text
+content = 	 
+content-foreground = #00000000
+content-background = #55000000
+
+[module/powermenu]
+type = custom/menu
+
+label-open =   
+;label-open-background = #dd0000
+;label-open-foreground = #fff
+label-close = cancel
+;label-close-background = #dd0000
+;label-close-foreground = #fff
+label-open-padding = 4 
+label-close-padding = 3 
+
+menu-0-0 = reboot
+menu-0-0-exec = menu-open-1
+menu-0-1 = power off
+menu-0-1-exec = menu-open-2
+menu-0-0-padding = 3
+menu-0-1-padding = 3
+
+menu-1-0 = reboot?  
+menu-1-0-exec = reboot
+menu-1-0-padding = 3
+
+menu-2-0 = power off?  
+menu-2-0-exec = shutdown now
+menu-2-0-padding = 3
+
