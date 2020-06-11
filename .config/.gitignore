@@ -1,0 +1,7 @@
+*
+!.gitignore
+!polybar
+!polybar/config
+!ranger
+!ranger/rc.conf
+!ranger/rifle.conf
