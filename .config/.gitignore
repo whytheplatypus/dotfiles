@@ -5,3 +5,5 @@
 !ranger
 !ranger/rc.conf
 !ranger/rifle.conf
+!picom
+!picom/picom.conf
