@@ -7,3 +7,10 @@
 !ranger/rifle.conf
 !picom
 !picom/picom.conf
+!bspwm
+!bspwm/bspwmrc
+!sxhkd
+!sxhkd/sxhkdrc
+!systemd
+!systemd/user
+!systemd/user/*.service

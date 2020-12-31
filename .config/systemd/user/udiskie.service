@@ -1,0 +1,11 @@
+[Unit]
+Description = Automounter with optional notifications
+
+[Service]
+Type        = simple
+Restart     = always
+RestartSec  = 1
+ExecStart   = /usr/bin/udiskie
+
+[Install]
+WantedBy = default.target

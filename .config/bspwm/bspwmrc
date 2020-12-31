@@ -1,0 +1,36 @@
+#! /bin/sh
+
+
+bspc monitor DP-4 -d code music web
+
+#OVERLAP=20
+#bspc config window_gap -$OVERLAP
+#for side in top right bottom left ; do
+	#bspc config ${side}_padding 45
+#done
+bspc config window_gap 25
+bspc config border_width 0
+
+bspc config split_ratio          1.6
+bspc config borderless_monocle   true
+bspc config gapless_monocle      false
+
+bspc config remove_unplugged_monitors true
+bspc config remove_disabled_monitors true
+bspc config ignore_ewmh_focus false
+
+
+bspc config pointer_action1 move
+bspc config pointer_action2 none
+bspc config pointer_action3 resize_corner
+bspc config click_to_focus true
+
+bspc config center_pseudo_tiled false
+
+
+
+sxhkd &
+xrandr --auto --output DP-3 --auto --left-of DP-4
+wal -R
+$HOME/.config/polybar/launch.sh
+xbindkeys

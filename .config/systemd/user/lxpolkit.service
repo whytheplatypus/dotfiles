@@ -1,0 +1,11 @@
+[Unit]
+Description = lightweight authentication agent
+
+[Service]
+Type        = simple
+Restart     = always
+RestartSec  = 1
+ExecStart   = /usr/bin/lxpolkit
+
+[Install]
+WantedBy = default.target

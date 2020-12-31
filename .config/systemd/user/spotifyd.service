@@ -1,0 +1,11 @@
+[Unit]
+Description = spotify daemon
+
+[Service]
+Type        = simple
+Restart     = always
+RestartSec  = 1
+ExecStart   = /usr/bin/spotifyd --config-path /home/whytheplatypus/.config/spotifyd/spotifyd.conf
+
+[Install]
+WantedBy = default.target

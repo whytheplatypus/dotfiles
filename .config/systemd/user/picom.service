@@ -1,0 +1,11 @@
+[Unit]
+Description = picom composition
+
+[Service]
+Type        = simple
+Restart     = always
+RestartSec  = 1
+ExecStart   = /usr/bin/picom --experimental-backends
+
+[Install]
+WantedBy = default.target
