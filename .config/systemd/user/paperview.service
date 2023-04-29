@@ -1,0 +1,12 @@
+[Unit]
+Description = paperview gif wallpaper
+
+[Service]
+Type        = simple
+Restart     = always
+RestartSec  = 1
+ExecStart   = /bin/bash -c '/home/whytheplatypus/.local/bin/paperview --create-desktop /home/whytheplatypus/.config/zap/On-The-Hill_waneella 10 0 0 1920 1080 /home/whytheplatypus/.config/zap/Sunshine_waneella 10 1920 0 2560 1440'
+
+
+[Install]
+WantedBy = default.target

@@ -8,11 +8,11 @@ margin-bottom = 0
 margin-top = 0
 
 [bar/top]
-monitor = DP-4
-width = 100%:-50
+monitor = DP-0
+;width = 100%:-50
 height = 25 
-offset-x = 25
-offset-y = 25 
+;offset-x = 25
+;offset-y = 25 
 ;bottom = true
 
 background = #000e0d1c
@@ -34,8 +34,8 @@ font-1 = "Ubuntu Nerd Font:size=14;2"
 font-2 = "Ubuntu Nerd Font:size=42;3"
 
 modules-left = bspwm
-modules-center = squaresLeft date squaresRight
-modules-right = wireless-network powermenu
+modules-center = squaresLeft date squaresRight 
+modules-right = vpn powermenu
 
 wm-restack = bspwm
 
@@ -43,11 +43,11 @@ scroll-up = bspwm-desknext
 scroll-down = bspwm-deskprev
 
 [bar/bottom]
-monitor = DP-3
-width = 100%:-50
+monitor = HDMI-0
+;width = 100%:-50
 height = 25 
-offset-x = 25
-offset-y = 25 
+;offset-x = 25
+;offset-y = 25 
 bottom = true
 
 background = #000e0d1c
@@ -106,11 +106,10 @@ label-focused-padding = 1
 label-occupied = ${colors.label-occupied}
 label-occupied-padding = 1
 
-label-urgent = %icon%
+label-urgent = ${colors.label-urgent}
 label-urgent-padding = 1
 
-label-empty = %name%
-label-empty-foreground = #44ffffff
+label-empty = ${colors.label-empty}
 label-empty-padding = 1
 
 [module/xwindow]
@@ -176,4 +175,11 @@ menu-1-0-padding = 3
 menu-2-0 = power off?  
 menu-2-0-exec = shutdown now
 menu-2-0-padding = 3
+
+[module/vpn]
+type = custom/script
+label = VPN %output%
+label-padding = 4
+exec = nordvpn status | awk '{print $4}'
+interval = 10
 

@@ -1,0 +1,12 @@
+[Unit]
+Description = zap gif wallpaper
+
+[Service]
+Type        = simple
+Restart     = always
+RestartSec  = 1
+ExecStart   = /bin/bash -c '/home/whytheplatypus/.cargo/bin/fig /home/whytheplatypus/.wallpapers/On-The-Hill_waneella.gif /home/whytheplatypus/.wallpapers/Sunshine_waneella.gif'
+KillSignal  = SIGKILL
+
+[Install]
+WantedBy = default.target

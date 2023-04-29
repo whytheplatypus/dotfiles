@@ -1,0 +1,11 @@
+[Unit]
+Description = zap gif wallpaper
+
+[Service]
+Type        = simple
+Restart     = always
+RestartSec  = 1
+ExecStart   = /bin/bash -c '/home/whytheplatypus/.local/bin/zap $(cat /home/whytheplatypus/.config/zap/cache)'
+
+[Install]
+WantedBy = default.target

@@ -1,8 +1,6 @@
 #! /bin/sh
 
 
-bspc monitor DP-4 -d code music web
-
 #OVERLAP=20
 #bspc config window_gap -$OVERLAP
 #for side in top right bottom left ; do
@@ -30,7 +28,8 @@ bspc config center_pseudo_tiled false
 
 
 sxhkd &
-xrandr --auto --output DP-3 --auto --left-of DP-4
+xrandr --auto --output HDMI-0 --auto --left-of DP-0
 wal -R
 $HOME/.config/polybar/launch.sh
 xbindkeys
+bspc monitor DP-0 -d code music web
